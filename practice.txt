@@ -4,4 +4,5 @@ new feature code
 numb= inp(int)
 val=prompt(who are you)
 line 3 this is new stuff prepping for python
+name=string(kevin)
 
