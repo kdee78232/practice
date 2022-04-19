@@ -14,6 +14,12 @@ print(makes[0:2])
 names=['Joe ' , 'Kevin ' , 'Jose ']
 turns=names * 5
 print(turns)
+inpt=input('what is your name: ')
+
+weather=float(input('what is temp\n: '))
+
+
+
 
 
 
