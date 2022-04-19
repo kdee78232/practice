@@ -1,0 +1,19 @@
+line 1
+line 2
+new feature code
+#variable to practice lists
+cars=['ford','chevy','dodge','nissan']
+foreign=['bmw','porshe','audi','vw']
+cars[2]='Dodge'
+cars[1]='Chevy'
+makes=cars+foreign
+print('these are the models,' , makes)
+print(cars[2])
+print(makes[0:2])
+
+names=['Joe ' , 'Kevin ' , 'Jose ']
+turns=names * 5
+print(turns)
+
+
+
