@@ -1,0 +1,80 @@
+#tuple code
+breeds=('german shephard','bulldog','bernadoodle')
+breeds[2]
+(a,b,c)=('him','her','them')
+a
+
+#practice list formating and new line
+people=['john','tom','jed']
+things=['car','bat','golf']
+print(f'{people} love these\n {things}')
+
+#string practice
+name='john'
+type(name)
+friend='Ted'
+print(f'{name} likes {friend} and they are buddies')
+
+#dictionaries practice
+cabinet={'name':'Tom','city':'London','wage':(9500,10000,1234)}
+cabinet['name']
+cabinet
+n=20
+
+
+cars=['dodge','dhevy','nissan','tesla']
+for variable in cars:
+    print(variable)
+
+
+
+#range for command
+for x in range(1,20):
+    print(x)
+
+#practice if statements
+n=20
+if n == 20:
+    print('this is good')
+
+
+inpt = int(input('What is you score?'))
+
+if inpt == 100:
+    print(f'Your grade is an A')
+elif inpt >= 85:
+    print(f'Grade is B')
+elif inpt <= 78:
+     print(f'Grade is C')
+else:
+     print(f'Grade is F')
+
+
+
+
+
+
+inpt = int(input('What is you score?'))
+
+if inpt == 100:
+    print(f'Your grade is an A')
+elif inpt >= 85:
+    print(f'Grade is B')
+elif inpt >= 78:
+     print(f'Grade is C')
+else:
+     print(f'Grade is F')
+
+
+
+
+
+cars=['ford','chevy','toyota','jeep','dodge']
+type(cars)
+print(type(cars))
+cars
+print(f'people like the cars {cars}')
+
+
+
+
