@@ -37,3 +37,29 @@ while (attempts < 20):
     attempts=attempts+1
 else:
     print('you are done')
+
+
+
+
+
+
+
+dataset=[1,2,3,4,5,6,6,7]
+for i in dataset:
+    print(i)
+print('"You are number 1"')
+
+
+
+
+
+
+
+
+while True:
+    n=56
+    numb=int(input('Enter you number: \nType your number  '))
+    if numb == 56:
+        break
+    print(f'numer is  {numb}')
+print('you are done')
