@@ -1,0 +1,26 @@
+#function examples#
+
+def devnet():
+    '''prints simple function'''
+    print('simple function')
+
+
+devnet()
+
+
+#use arg in def command arguments field to pass args
+def names (arg1,arg2):
+    '''print names'''
+    print(arg1, arg2)
+list1=['nate','james','sue']
+list2=['koe','joe','tes']   
+names(list1[2],list2[1]) 
+
+
+
+def total (arg1,arg2):
+    '''return multiplication'''
+    result=arg1*arg2
+    return result
+
+total (10,8)
