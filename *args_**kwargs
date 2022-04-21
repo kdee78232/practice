@@ -1,0 +1,21 @@
+   #*args allow you to pass multiple arguments 
+         # or keyword arguments to a function. 
+def teams(*args):
+    for like in args:
+        print("My favorite", "team is" , like)
+
+teams('Memphis','San Antonio','New Jersey','Toronto')
+
+
+
+
+#**kwargs   arguments are passed as a dictionary and these arguments make a dictionary inside function with name same as the 
+      # parameter excluding double asterisk  
+      # remember to () in argument.items()
+def shoes(**kwargs):
+    for key , value in kwargs.items():
+        print("My favorite brands", value , "!")
+
+
+
+shoes(kwarg1='Nike',kwarg2='Adidas',kwarg3='Converse',kwarg4='Timberland')
