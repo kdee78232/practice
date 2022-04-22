@@ -1,0 +1,62 @@
+#use arg in def command arguments field to pass args
+def names (arg1,arg2):
+    '''print names'''
+    print(arg1, arg2)
+list1=['nate','james','sue']
+list2=['koe','joe','tes']   
+names(list1[2],list2[1]) 
+
+
+def total (arg1,arg2):
+    '''return multiplication'''
+    result=arg1*arg2
+    return result
+
+total (10,8)
+
+
+
+
+
+def data (*args):
+    for arg in args:
+        print('These are your numbers',arg)
+
+
+
+data(1,2,3,89,100)
+
+
+#definition kwargs(keyword)
+
+def data(**kwargs):
+    print("\nRoster is the following:")
+    for key,value in kwargs.items():
+        print("{} is {}".format(key,value))
+
+data(firstname='John',lastname='Anders',city='Raleigh',state='North Carolina')
+data(firstname='Sue',lastname='Williams',city='Raleigh',state='North Carolina')
+
+
+
+
+
+
+   #*args allow you to pass multiple arguments 
+         # or keyword arguments to a function. 
+def teams(*args):
+    for like in args:
+        print("My favorite", "team is" , like)
+
+teams('Memphis','San Antonio','New Jersey','Toronto')
+
+
+
+
+#**kwargs   arguments are passed as a dictionary and these arguments make a dictionary inside function with name same as the 
+      # parameter excluding double asterisk 
+def shoes(**kwargs):
+    for key , value in kwargs.items():
+        print("My favorite brands", value , "!")
+        
+shoes(kwarg1='Nike',kwarg2='Adidas',kwarg3='Converse',kwarg4='Timberland')x
