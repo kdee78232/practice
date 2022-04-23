@@ -1,0 +1,34 @@
+class Router:
+   ...:     def __init__ (self, model,swversion,ip_add):
+   ...:         self.model=model
+   ...:         self.swversion=swversion
+   ...:         self.ip_add=ip_add
+   ...: 
+   ...: rtr1=Router('ios5','15.6.7','10.10.0.8')
+    
+class Router:
+    '''Class Router'''
+    def __init__ (self,model,ios,ip_add):
+        '''initiaize'''
+        self.model=model
+        self.ios=ios
+        self.ip_add=ip_add
+
+rtr1=Router('1920','15.2.8','10.10.4.5')
+rtr2=Router('1941','15.0.9','8.8.8.8')
+rtr3=Router('1921','12.0.4','192.168.1.2')
+print('Router1 ip address\n',rtr1.ip_add,'\n' , 'Router2 model:\n', rtr2.model)
+
+prompt=input('Please Enter you selection:\nType you selection> ')
+
+if (prompt=='rtr1'):
+    '''input'''
+    print(f'Router1 model: ' , rtr1.model,'\n','ip address: ',rtr1.ip_add) 
+
+elif (prompt=='rtr2'):
+    '''input'''
+    print(f'Router2 model: ' , rtr2.model,'\n','ip address: ',rtr2.ip_add)
+
+
+else:
+    print('done')
