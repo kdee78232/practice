@@ -1,0 +1,51 @@
+
+#Remember to use double underscores __ when doing init#
+
+
+
+class Router:
+    def __init__ (self, model,swversion,ip_add):
+        self.model=model
+        self.swversion=swversion 
+        self.ip_add=ip_add
+        
+    def getdesc(self):
+        '''return formated info'''
+        desc= f'Router Model       :{self.model}\n'
+          f'Software Version   :{self.swversion}\n'
+          f'Router Management Address:{self.ip_add}'
+        return desc 
+
+rtr1=Router('ios5','15.6.7','10.10.0.8')
+rtr2=Router('ios5','15.4.7','10.10.0.10')
+print('RTR1\n',rtr1.getdesc(), '\n',sep='')
+
+
+
+
+class Router:
+    def  __init__ (self,model,swversion,ip_add):
+        self.model=model
+        self.swversion=swversion
+        self.ip_add=ip_add
+    def getdesc(self):
+        desc=(f' Router Model        :{self.model}\n'
+              f' Software Version    :{self.swversion}\n'
+              f' Management Address  :{self.ip_add}\n')
+        return desc
+
+class Switch(Router):
+    def getdesc(self):
+        desc=(f'Switch Model          :{self.model}\n'
+              f'Software Version      :{self.swversion}\n'
+              f'Management Address    :{self.ip_add}')
+        return desc
+rtr1=Router('1921','15.0.6','10.10.0.8')
+rtr2=Router('1921','12.0.8','10.0.0.12')
+sw1=Switch('2960','12.0.8','10.0.0.25')
+sw2=Switch('2960','12.0.8','10.0.0.22')
+sw3=Switch('2960','12.0.8','10.0.0.30')
+print('Router1\n', rtr1.getdesc(), '\n', sep='')
+print('Router2\n', rtr2.getdesc(), '\n', sep='')
+print('Switch1\n', sw1.getdesc(), '\n', sep='')
+print('Switch2\n', sw2.getdesc(), '\n', sep='')
